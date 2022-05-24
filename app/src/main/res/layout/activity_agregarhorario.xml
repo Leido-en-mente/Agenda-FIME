@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009929"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Agregar Alarma"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/inputDescripcion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748"
+        tools:layout_editor_absoluteX="0dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/inputDescripcion"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/gallery_thumb"
+        android:hint="  Descripcion"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/inputHora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/inputHora"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="392dp"
+        android:background="@android:drawable/gallery_thumb"
+        android:hint="  Hora"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text=":"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423" />
+
+    <EditText
+        android:id="@+id/inputMinutos"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="392dp"
+        android:background="@android:drawable/gallery_thumb"
+        android:hint="  Minutos"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="parent">
+    </EditText>
+
+    <Button
+        android:id="@+id/alarmId"
+        android:layout_width="128dp"
+        android:layout_height="73dp"
+        android:backgroundTint="#98FF96"
+        android:text="Agregar"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnVolver"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#98FF96"
+        android:text="Cancelar"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <Button
+        android:id="@+id/mostrar"
+        android:layout_width="128dp"
+        android:layout_height="73dp"
+        android:backgroundTint="#98FF96"
+        android:text="Mostrar Alarmas"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

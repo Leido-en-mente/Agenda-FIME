@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009929"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Agenda"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223"
+        tools:layout_editor_absoluteX="16dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnirAgregarAgenda"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#98FF96"
+        android:text="Agregar"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnirMenu"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <Button
+        android:id="@+id/btnirMenu"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#98FF96"
+        android:text="Volver al Menu"
+        android:textSize="19dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="276dp"
+        android:layout_height="195dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnirMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.12"
+        app:srcCompat="@android:drawable/ic_menu_today" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
